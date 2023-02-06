@@ -1,0 +1,42 @@
+.navbar {
+  min-width: 248px;
+  position: relative;
+  background-color: $color-secondary;
+  display: flex;
+  flex-direction: column;
+
+  &__select {
+    padding: 14px;
+    align-items: center;
+    color: $color-light;
+    font-family: $font-family-secondary;
+  }
+
+  &__option {
+    position: absolute;
+    color: $color-light;
+    background-color: $color-secondary;
+    box-shadow: $option-box-shadow;
+    font-family: $font-family-secondary;
+    top: 53px;
+    left: 18px;
+    width: 153px;
+    padding: 12px;
+    z-index: 1;
+
+    &:hover {
+      background-color: $color-primary;
+    }
+  }
+
+  &__active {
+    background-color: $color-saphia;
+    color: $color-blue;
+    opacity: 0.9;
+    border-left: 5px solid $color-blue;
+  }
+
+  &__icon-users {
+    padding: 0 6px 4px 0;
+  }
+}

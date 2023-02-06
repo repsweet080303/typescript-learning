@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/main.scss" />
+        <title>User Management</title>
+    </head>
+    <body>
+        <header class="title">
+            <h1 class="title__head">User Manager</h1>
+        </header>
+        <main class="container">
+            <nav class="navbar">
+                <button class="btn btn__primary btn__new">
+                    <i class="btn__icon-plus fa-solid fa-plus"></i>New
+                </button>
+                <div class="navbar__option d-hidden">Add new user</div>
+                <a href="#" class="navbar__select d-flex"
+                    ><i class="navbar__icon-users fa-solid fa-user-group"></i
+                    >Users</a
+                >
+            </nav>
+            <div class="table-primary">
+                <div class="table-primary__search">
+                    <div class="search__header">
+                        <label class="search__title">Users</label>
+                        <button class="btn__search">
+                            <i class="fa-solid fa-search"> </i>
+                        </button>
+                    </div>
+                    <div class="search__wrapper d-hidden">
+                        <input
+                            type="text"
+                            class="search__input"
+                            placeholder="Search"
+                        />
+                        <button class="btn__close">
+                            <i class="fas fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+                <table class="table-primary__col__wrapper">
+                    <thead>
+                        <tr>
+                            <th
+                                class="table-primary__col__avatar table-primary__spacing"
+                            ></th>
+                            <th
+                                class="table-primary__col__full-name table-primary__spacing"
+                            >
+                                Full Name
+                            </th>
+                            <th
+                                class="table-primary__col__status table-primary__spacing"
+                            >
+                                Status
+                            </th>
+                            <th
+                                class="table-primary__col__email table-primary__spacing"
+                            >
+                                Email
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-primary__body"></tbody>
+                </table>
+            </div>
+            <div class="info d-hidden"></div>
+            <div class="update-user d-hidden"></div>
+        </main>
+        <div class="modal-add-user d-flex-center d-hidden">
+            <div class="modal-add-user__inner">
+                <div class="modal-add-user__wrapper d-flex-between">
+                    <h3 class="modal-add-user__header">Enter user name</h3>
+                    <a href="#" class="modal-add-user__icon--close">
+                        <i class="icon__close fa-regular fa-xmark"></i>
+                    </a>
+                </div>
+                <div class="form">
+                    <input type="input" class="form__input" />
+                    <button class="btn btn__primary btn__save">Save</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-delete-user d-flex-center d-hidden">
+            <div class="d-flex-align">
+                <div class="modal-delete-user__wrapper">
+                    <h3 class="modal-delete-user__header">Delete</h3>
+                    <p class="modal-delete-user__paragraph">
+                        Are you sure to delete this user?
+                    </p>
+                    <div class="btn__group d-flex-between">
+                        <button class="btn btn__secondary btn__cancel">
+                            Cancel
+                        </button>
+                        <button
+                            class="btn btn__primary btn__delete btn__remove"
+                        >
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup d-flex-center d-hidden">
+            <div class="d-flex-align">
+                <div class="popup__wrapper">
+                    <p class="popup__message">Update user failed</p>
+                    <button class="btn btn__primary btn__back btn__remove">
+                        Go back
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="scripts/main.js"></script>
+    </body>
+</html>

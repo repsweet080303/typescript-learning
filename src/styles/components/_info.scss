@@ -1,0 +1,53 @@
+.info {
+  background-color: $color-light;
+  min-width: 400px;
+  margin: 13px 13px 0 0;
+
+  &__head {
+    padding: 9px 14px;
+    align-items: center;
+    border-bottom: $border-cornsilk;
+
+    &__title {
+      color: $color-secondary;
+      padding: 7px 22px 7px 10px;
+    }
+
+    &__wrapper {
+      padding-top: 10px;
+    }
+  }
+
+  &__body {
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 30px;
+    }
+
+    &__image {
+      width: 200px;
+    }
+
+    &__name {
+      padding: 20px 0;
+      font-size: $font-size-md;
+    }
+
+    &__spacing {
+      padding: 6px 16px;
+    }
+
+    &__detail {
+      padding-left: 50px;
+      font-family: $font-family-secondary;
+      color: $color-secondary;
+    }
+
+    &__title {
+      padding: 7px 22px 7px 10px;
+      font-family: $font-family-secondary;
+    }
+  }
+}

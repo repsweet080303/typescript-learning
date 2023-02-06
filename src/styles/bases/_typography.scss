@@ -1,0 +1,20 @@
+// font family primary
+@font-face {
+  font-family: "Roboto-bold";
+  src: url(../assets/fonts/Roboto-Medium.ttf) format("truetype");
+}
+
+// font family secondary
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+/* variable font-family */
+$font-family-primary: "Roboto-bold";
+$font-family-secondary: "Roboto";
+
+body {
+  background-color: $color-silver;
+  font-family: $font-family-primary;
+}

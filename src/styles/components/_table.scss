@@ -1,0 +1,73 @@
+.table-primary {
+  width: 81%;
+  height: 600px;
+  overflow: scroll;
+  font-size: $font-size-sm;
+  margin: 12px 12px 0;
+  border-collapse: collapse;
+  background-color: $color-light;
+
+  &__search {
+    border-bottom: $border-cornsilk;
+    text-align: left;
+    width: 100%;
+  }
+
+  &__spacing {
+    text-align: start;
+    padding: 20px 15px;
+    background-color: $color-aliceblue;
+    font-size: $font-size-md;
+    border-bottom: 1px solid $color-blue;
+  }
+
+  &__col {
+    &__wrapper {
+      width: 100%;
+    }
+  }
+
+  &__head {
+    &__row {
+      background-color: $color-aliceblue;
+    }
+
+    &__avatar {
+      width: 60px;
+    }
+
+    &__full-name {
+      width: 380px;
+    }
+
+    &__status {
+      width: 140px;
+    }
+  }
+
+  &__body {
+    width: 100%;
+    color: $color-primary;
+
+    font: {
+      size: $font-size-md;
+      family: $font-family-secondary;
+    }
+
+    &__row {
+      padding: 8px 8px 8px 16px;
+      border-bottom: 1px solid $color-silver;
+      background-color: $color-light;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    background-color: $color-light;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: $color-cornsilk;
+  }
+}

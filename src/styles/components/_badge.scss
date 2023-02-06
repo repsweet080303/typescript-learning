@@ -1,0 +1,21 @@
+.status-item {
+  width: 76px;
+  font-family: $font-family-primary;
+  background-color: $color-salmon;
+  color: $color-danger;
+  padding: 6px 10px;
+  border-radius: $border-radius-md;
+}
+
+.status-item--active {
+  width: 45px;
+  font-family: $font-family-primary;
+  background-color: $color-green;
+  color: $color-success;
+  padding: 6px 10px;
+  border-radius: $border-radius-md;
+}
+
+.badge-spacing {
+  margin-right: 108px;
+}

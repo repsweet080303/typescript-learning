@@ -1,0 +1,26 @@
+.d-flex {
+  display: flex;
+}
+
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.d-flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.d-flex-align {
+  display: flex;
+  align-items: center;
+}
+
+.d-hidden {
+  display: none;
+}
+
+.margin-tb {
+  margin: 26px 0;
+}

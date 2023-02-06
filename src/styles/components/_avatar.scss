@@ -1,0 +1,26 @@
+.avatar-user {
+  width: 45px;
+  border-radius: $border-radius-lg;
+
+  &__none {
+    background-color: $color-blue;
+    width: 45px;
+    color: #fff;
+    border-radius: 23px;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  &__large {
+    width: 200px;
+    height: 170px;
+    border-radius: 5px;
+    font-size: 145px;
+  }
+
+  &__medium {
+    padding: 25px 30px;
+    font-size: 62px;
+    border-radius: 2px;
+  }
+}

@@ -1,0 +1,73 @@
+.update-user {
+  min-width: 520px;
+  background-color: $color-light;
+  margin-top: 12px;
+
+  &__input {
+    position: absolute;
+    left: -1px;
+    visibility: hidden;
+  }
+
+  &__header {
+    border-bottom: $border-cornsilk;
+
+    &__title {
+      display: flex;
+      padding: 15px 25px;
+      border-bottom: 3px solid $color-blue;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__select {
+      color: $color-blue;
+    }
+  }
+
+  &__body {
+    padding: 24px 24px 24px 44px;
+    height: 520px;
+    overflow: scroll;
+
+    &__label {
+      width: 84px;
+      text-align: right;
+      padding-right: 18px;
+    }
+
+    &__input {
+      width: 240px;
+      height: 26px;
+      color: $color-secondary;
+      border: $border-cornsilk;
+    }
+
+    &__img {
+      width: 105px;
+    }
+
+    &__upload {
+      color: $color-blue;
+      padding: 90px 0 0 24px;
+    }
+
+    &__time {
+      font-family: $font-family-secondary;
+      font-size: $font-size-md;
+      color: $color-secondary;
+    }
+
+    &__details {
+      border: 1px solid $color-moonblue;
+      font-family: $font-family-secondary;
+      color: $color-secondary;
+    }
+
+    &__msg {
+      margin-left: 8px;
+      color: $color-danger;
+      font-size: $font-size-xl;
+    }
+  }
+}

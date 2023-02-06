@@ -1,0 +1,23 @@
+.popup {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: $color-secondary, $alpha: 0.2);
+  animation: fadeIn ease-in 0.1s;
+
+  &__wrapper {
+    width: 350px;
+    height: 110px;
+    align-items: center;
+    background-color: $color-light;
+    box-shadow: $modal-box-shadow;
+    border: 4px solid $color-blue;
+    color: $color-secondary;
+  }
+
+  &__message {
+    margin-top: 30px;
+    text-align: center;
+  }
+}

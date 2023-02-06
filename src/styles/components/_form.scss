@@ -1,0 +1,15 @@
+.form {
+  display: flex;
+  padding: 4px 18px 18px 18px;
+
+  &__input {
+    width: 204px;
+    height: 33px;
+    color: $color-primary;
+    border: 1px solid $color-moonblue;
+
+    &:focus {
+      border: 1px solid $color-blue;
+    }
+  }
+}
