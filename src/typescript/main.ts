@@ -1,12 +1,8 @@
-const myArray : any = ['hi', 'sd'];
-const myArrayToo: any = [true, false, false];
-const myString : any = 'supermain';
-const myNumber : any = 99;
-let myBoolean : any = true;
-console.log(typeof myBoolean);
-myBoolean = 'string';
-console.log(typeof myBoolean);
-console.log(typeof myArray);
-console.log(typeof myString);
-console.log(typeof myNumber);
-console.log(myBoolean);
+function myFunction(name: string, age) {
+  return `my name ${name} and i ${age}`;
+}
+console.log(myFunction("hoang", 22));
+
+const myArray: string[] = ["hoang", "manh", "Dinh", "Kieu"];
+
+myArray.forEach((element) => console.log(element.toUpperCase()));
