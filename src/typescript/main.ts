@@ -1,5 +1,5 @@
 const myArray : string[] = ['hi', 'sd'];
-const myArrayToo: Array<number> = [2,3,4,1];
+const myArrayToo: boolean[] = [true, false, false];
 const myString : string = 'supermain';
 const myNumber : number = 99;
 const myBoolean : boolean = true;
