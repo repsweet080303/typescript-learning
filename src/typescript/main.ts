@@ -1,8 +1,10 @@
-function myFunction(name: string, age) {
-  return `my name ${name} and i ${age}`;
+function myFunction(name: string | string[]) {
+  if(Array.isArray(name)){
+    name.forEach(e => console.log(`they are ${e}`))
+  } else {
+    console.log(`there is ${name}`);
+  }
 }
-console.log(myFunction("hoang", 22));
 
-const myArray: string[] = ["hoang", "manh", "Dinh", "Kieu"];
-
-myArray.forEach((element) => console.log(element.toUpperCase()));
+myFunction(['Hoa','Tien'])
+myFunction('Minh')
