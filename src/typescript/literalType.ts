@@ -1,11 +1,9 @@
-type Color = 'red' | 'green' | 'blue';
-
-const myColor: 'red' = 'red';
-
-// myColor = 'red' // constant can assign
-
-let yourColor: Color = 'blue';
-
-yourColor = 'red'
-
-console.log(myColor);
+for (var i = 0; i < 10; i++) {
+  // capture the current state of 'i'
+  // by invoking a function with its current value
+  (function (i) {
+    setTimeout(function () {
+      console.log(i);
+    }, 100 * i);
+  })(i);
+}

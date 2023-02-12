@@ -1,1 +1,1 @@
-import '../typescript/literalType'
+import '../typescript/variable'
