@@ -1,9 +1,12 @@
 {
+  "eslint.options": {
+    "configFile": "C:/Users/PxViet/Code/typescript-learning.eslintrc.json"
+  },
   "env": {
       "browser": true,
       "es2021": true
   },
-  "extends": "eslint:recommended",
+  "extends": "airbnb",
   "overrides": [
   ],
   "parserOptions": {

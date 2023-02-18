@@ -1,20 +1,11 @@
-function sumMatrix(array: number[][]) {
-  let sum = 0;
-
-  for (let i = 0; i < array.length; i++) {
-    console.log(array[i]);
-    let currentArray = array[i];
-    for (let j = 0; j < currentArray.length; j++) {
-      sum += currentArray[j];
-    }
+class Point {
+  x;
+  y;
+  constructor(x: number, y: number) {
+    this.x = x;
+    this.y = y;
   }
-  return sum;
 }
 
-console.log(
-  sumMatrix([
-    [2, 3, 2],
-    [8, 5, 8],
-    [10, 12],
-  ])
-);
+const newss = new Point(2, 3);
+
